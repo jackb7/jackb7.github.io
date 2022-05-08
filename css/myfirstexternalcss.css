@@ -1,0 +1,40 @@
+h1 {
+  color:  blue;
+}
+p  {
+  color: red;
+}
+#p1 {
+  font-style: italic;
+}
+.boldtext {
+  font-weight: bold;
+}
+
+.card {
+  background-color: lightgrey;
+  border: 5px solid grey;
+  border-radius: 10px;
+  /* offset-x, offset-y, blur radius, spread radius, color  */
+  /*rgba --> r: 0-255, g: 0-255, b: 0-255, a:0-1*/
+  box-shadow: 10px 10px 12px 4px rgba(0,0,0,0.5);
+  margin: 24px;
+  padding: 48px;
+}
+/*to right, to top, to bottom, ect for gradient direction,use deg for degrees*/
+.button {
+  background: linear-gradient(to bottom, lightgreen, forestgreen);
+  border: 3px solid darkgreen;
+  border-radius: 6px;
+  display: inline-block;
+  margin: 12px;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+/* pseudo-class */
+.button:hover {
+  opacity: 0.8;
+}
+.button:active {
+  background: linear-gradient(to bottom, forestgreen, lightgreen);
+}
