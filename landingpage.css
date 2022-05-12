@@ -1,0 +1,65 @@
+body {
+  margin: 0px
+}
+.list2 {
+  list-style-type: square;
+}
+.contactButton {
+  color: red;
+  font-family: Verdana;
+  text-decoration: none;
+}
+.portfolioButton {
+  color: purple;
+  font-family: Courier;
+  text-decoration: none;
+}
+.aboutButton {
+  color: lightgreen;
+  font-family: fantasy;
+  text-decoration: none;
+}
+.button1 {
+  color: navy;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+.list3 {
+  border-radius: 20px;
+  list-style-type: none;
+  background-color: royalblue;
+  display: inline-block;
+
+}
+.list3 li {
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 50px;
+  padding: 24px;
+  font-size: 20px
+}
+.contact {
+  color: white;
+  text-decoration: none;
+
+}
+.portfolio  {
+  color: white;
+  text-decoration: none;
+}
+.about {
+  color: white;
+  text-decoration: none;
+}
+.button2 {
+  color: white;
+  text-decoration: none;
+}
+.list3 li:hover {
+  background-color: skyblue;
+  padding: 24px;
+
+}
+.list3 li:active {
+  background-color: darkblue;
+}
