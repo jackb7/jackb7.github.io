@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Semantic Layout Example</title>
+    <style>
+
+      #header,
+      #footer {
+        display: block;
+        background-color: seagreen;
+        padding: 24px;
+      }
+      body {
+        background-color: seagreen;
+        margin: 0px;
+      }
+      .section {
+        background-color: lightgray;
+        margin: 36px;
+        padding: 5px 25px
+      }
+      #main {
+        background-color: ;
+      }
+      #nav {
+        background-color: lightgray;
+        padding: 12px
+      }
+      .section2 {
+        background-color: lightgray;
+        display: inline-block;
+        margin-top: 50px;
+        margin: 36px;
+        padding: 5px 25px
+      }
+      #footer {
+        background-color: lightgray;
+        display: block;
+        margin-top:150px;
+      }
+      #mainheader {
+        font-size:28px ;
+        margin-left: 25px
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Div Only Layout</h1>
+    </div>
+    <div id="nav">
+      <ul>
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+     </ul>
+    </div>
+    <div id="main">
+      <h2 id=mainheader>Section Header</h2>
+      <div class="section"><h2>Nested Section 1 </h2>
+        <p>Voluptate philosophari de incididunt, nescius ad irure.
+          Irure ea quamquam aut quem an te ut dolor deserunt et anim
+          arbitror voluptatibus se commodo a singulis. Est quorum
+          voluptate despicationes, multos occaecat ne constias.
+          Laborum illum pariatur laboris, labore ut laboris.</p>
+        <p>Voluptate philosophari de incididunt, nescius ad irure.
+          Irure ea quamquam aut quem an te ut dolor deserunt et anim
+          arbitror voluptatibus se commodo a singulis. Est quorum
+          voluptate despicationes, multos occaecat ne constias.
+          Laborum illum pariatur laboris, labore ut laboris.</p>
+      </div>
+      <div class="section2"><h2>Nested Section 2 </h2>
+        <p>Voluptate philosophari de incididunt, nescius ad irure.
+          Irure ea quamquam aut quem an te ut dolor deserunt et anim
+          arbitror voluptatibus se commodo a singulis. Est quorum
+          voluptate despicationes, multos occaecat ne constias.
+          Laborum illum pariatur laboris, labore ut laboris.</p>
+        <p >Voluptate philosophari de incididunt, nescius ad irure.
+          Irure ea quamquam aut quem an te ut dolor deserunt et anim
+          arbitror voluptatibus se commodo a singulis. Est quorum
+          voluptate despicationes, multos occaecat ne constias.
+          Laborum illum pariatur laboris, labore ut laboris.</p>
+      </div>
+    </div>
+
+    <div id="footer">This is a FOOTER</div>
+  </body>
+</html>
