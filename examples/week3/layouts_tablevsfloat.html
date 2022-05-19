@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Layout Table vs Float</title>
+    <style>
+    /*CSS FOR BOTH LAYOUTS*/
+      .header {
+        background-color: lightgreen;
+        padding: 12px 24px;
+      }
+      .nav {
+        padding: 12px 24px;
+      }
+      .content {
+        padding: 36px;
+      }
+      .footer {
+        background-color: green;
+        padding: 12px 24px;
+      }
+      img.image {
+        float: right;
+        width: 120px;
+        margin-left: 12px;
+      }
+      img.image2 {
+        float: left;
+        width: 150px;
+        margin-right: 12px;
+      }
+      .clear {
+        clear: both;
+        margin: ;
+      }
+      /* CSS SPECIFIC TO TABLE LAYOUT*/
+      #oldTableLayout {
+        border-collapse: collapse;
+      }
+      #oldTableLayout .nav {
+        background-color: #DDFFDD
+      }
+      /*CSS SPECIFIC TO FLOAT LAYOUT*/
+      #oldFloatLayout .nav {
+        box-sizing: border-box;;
+        float: left;
+        width: 20%;
+      }
+      #oldFloatLayout .content {
+        box-sizing: border-box;;
+        float: left;
+        width: 80%;
+      }
+      /*THIS IS THE CLEAR FIX*/
+      #oldFloatLayout .main:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      #oldFloatLayout .main {
+        background: linear-gradient(to right, #DDFFDD 20%, white 20.0001%);
+      }
+    </style>
+  </head>
+  <body>
+    <table id="oldTableLayout">
+      <tr>
+        <td class="header" colspan="2">
+          <h1>This is how page layouts used to be done with tables</h1>
+        </td>
+      </tr>
+      <tr>
+        <td class="nav">
+          <div><a href="#">Home</a></div>
+          <div><a href="#">Gallery</a></div>
+          <div><a href="#">About Me</a></div>
+          <div><a href="#">Contact</a></div>
+        </td>
+        <td class="content">
+          <img class="image" src="../../images/JokerPoster.png" alt="picture">
+          <p>
+            Deserunt labore nulla an dolore ex qui quid expetendis,
+            tempor appellat non exercitation, e o magna probant e ab
+            malis vidisse fidelissimae, quo sunt probant, aut eram
+            ingeniis senserit, aliqua iis laborum. O illum veniam ipsum
+            fabulas ne noster non ne quorum laboris. Aliqua ingeniis in
+            enim illum.In ea quae probant ne incididunt fugiat
+            incurreret occaecat in se te anim laborum, proident nam
+            voluptate, appellat exquisitaque o fabulas, incididunt ipsum
+            aliquip consequat ea ingeniis labore elit possumus summis
+            est ea cillum nostrud illustriora. In amet singulis
+            sempiternum. Amet comprehenderit arbitror sunt ingeniis,
+            esse nam incurreret in fore an esse admodum se arbitror eu
+            magna doctrina philosophari.
+          </p>
+          <div class="clear"></div>
+          <img class="image2" src="../../images/cooloilpaintart.webp" alt="picture">
+          <p>
+            Arbitror et expetendis ab singulis cillum expetendis
+            deserunt. Voluptate do export quibusdam a iudicem do
+            deserunt a magna laborum concursionibus est duis
+            concursionibus mandaremus dolore constias. Incididunt non
+            possumus se admodum duis quis non quem. Excepteur ipsum
+            mandaremus possumus, dolor ingeniis possumus et expetendis
+            anim senserit, arbitror an ingeniis.Esse e deserunt.
+            Appellat quis expetendis. Hic cillum sunt ne nostrud te se
+            legam admodum offendit ad ea an export cillum aute o quae
+            est ingeniis.
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td class="footer" colspan="2">
+          copyright &copy; Barnes Graphics 2022
+        </td>
+
+      </tr>
+    </table>
+    <table>
+
+      <div id="oldFloatLayout">
+       <div class="header">
+        <h1>This is how layouts used to be done with floats
+       </div>
+       <div class="main">
+        <div class="nav">
+          <div><a href="#">Home</a></div>
+          <div><a href="#">Gallery</a></div>
+          <div><a href="#">About Me</a></div>
+          <div><a href="#">Contact</a></div>
+       </div>
+        <div class="content">
+          <img class="image" src="../../images/JokerPoster.png" alt="picture">
+          <p>
+            Deserunt labore nulla an dolore ex qui quid expetendis,
+            tempor appellat non exercitation, e o magna probant e ab
+            malis vidisse fidelissimae, quo sunt probant, aut eram
+            ingeniis senserit, aliqua iis laborum. O illum veniam ipsum
+            fabulas ne noster non ne quorum laboris. Aliqua ingeniis in
+            enim illum.In ea quae probant ne incididunt fugiat
+            incurreret occaecat in se te anim laborum, proident nam
+            voluptate, appellat exquisitaque o fabulas, incididunt ipsum
+            aliquip consequat ea ingeniis labore elit possumus summis
+            est ea cillum nostrud illustriora. In amet singulis
+            sempiternum. Amet comprehenderit arbitror sunt ingeniis,
+            esse nam incurreret in fore an esse admodum se arbitror eu
+            magna doctrina philosophari.
+          </p>
+          <div class="clear"></div>
+          <img class="image2" src="../../images/cooloilpaintart.webp" alt="picture">
+          <p>
+            Arbitror et expetendis ab singulis cillum expetendis
+            deserunt. Voluptate do export quibusdam a iudicem do
+            deserunt a magna laborum concursionibus est duis
+            concursionibus mandaremus dolore constias. Incididunt non
+            possumus se admodum duis quis non quem. Excepteur ipsum
+            mandaremus possumus, dolor ingeniis possumus et expetendis
+            anim senserit, arbitror an ingeniis.Esse e deserunt.
+            Appellat quis expetendis. Hic cillum sunt ne nostrud te se
+            legam admodum offendit ad ea an export cillum aute o quae
+            est ingeniis.
+          </p>
+        </div>
+       </div>
+       <div class="footer">
+         This is afooter
+      </div>
+      </div>
+      <div class="footer"></div>
+    </table>
+  </body>
+</html>
