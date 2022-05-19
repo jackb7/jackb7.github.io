@@ -2,8 +2,71 @@
 <html lang="en-US">
   <head>
     <title>About Page</title>
+    <style>
+
+    body {
+      text-align: center;
+      margin: -8px
+    }
+    header {
+      text-align: center;
+      border-radius: 15px;
+      list-style-type: none;
+      background-color: royalblue;
+      display: inline-block;
+      width: 100%;
+
+    }
+    header h1 {
+      color: white;
+      border-bottom: 3px solid white;
+      padding: 20px
+
+    }
+      ul li {
+      display: inline-block;
+      margin-left: 20px;
+      margin-right: 50px;
+      padding: 1px;
+      font-size: 20px
+    }
+    ul li a {
+      display: inline-block
+    }
+    .contact {
+      color: white;
+      text-decoration: none;
+
+    }
+    .portfolio  {
+      color: white;
+      text-decoration: none;
+    }
+    .about {
+      color: white;
+      text-decoration: none;
+    }
+      ul li a:hover {
+      background-color: white;
+      color: royalblue;
+
+    }
+      ul li a:active {
+        background-color: royalblue;
+        color: white;
+    }
+    </style>
   </head>
   <body>
-    <h1>About Page.</h1>
+  <header>
+    <h1>About Page</h1>
+    <nav>
+      <ul>
+        <li><a href="contactpage.html" class="contact">Contact</a></li>
+        <li><a href="index.html" class="portfolio">Home</a></li>
+        <li><a href="portfoliopage.html" class="about">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
   </body>
 </html>
