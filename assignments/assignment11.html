@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Assignment11</title>
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+      .flexContainer {
+        background-color: royalblue;
+        border-radius: 4px;
+        display: flex;
+      }
+      .flexDirection {
+        flex-direction: row-reverse
+      }
+      .flexChild {
+        background-color: lavender;
+        border: 2px solid gray;
+        border-radius: 4px;
+        font-size: 24px;
+        font-weight: bold;
+        height: 50px;
+        width: 50px;
+        margin: 10px;
+        padding: 8px 14px;
+      }
+      .flexWrap {
+        flex-wrap: wrap;
+      }
+      .flexDirection2 {
+        flex-direction: column;
+      }
+      .justifyContent {
+        justify-content: space-between;
+      }
+      .flexDirection3 {
+        flex-direction: row;
+      }
+      .alignItems {
+        align-items: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>1st Flex Container</h2>
+    <div class="flexContainer flexDirection">
+      <div class="flexChild">a</div>
+      <div class="flexChild">b</div>
+      <div class="flexChild">c</div>
+      <div class="flexChild">d</div>
+    </div>
+    <h2>2nd Flex Container</h2>
+    <div class="flexContainer flexWrap">
+      <div class="flexChild">a</div>
+      <div class="flexChild">b</div>
+      <div class="flexChild">c</div>
+      <div class="flexChild">d</div>
+      <div class="flexChild">e</div>
+      <div class="flexChild">f</div>
+    </div>
+    <h2>3rd Flex Container</h2>
+    <div class="flexContainer flexDirection2 alignItems">
+      <div class="flexChild">a</div>
+      <div class="flexChild">b</div>
+      <div class="flexChild">c</div>
+      <div class="flexChild">d</div>
+      <div class="flexChild">e</div>
+      <div class="flexChild">f</div>
+    </div>
+    <h2>4th Flex Container</h2>
+    <div class="flexContainer flexDirection3 justifyContent">
+      <div class="flexChild">a</div>
+      <div class="flexChild">b</div>
+      <div class="flexChild">c</div>
+      <div class="flexChild">d</div>
+      <div class="flexChild">e</div>
+      <div class="flexChild">f</div>
+    </div>
+  </body>
+</html>
