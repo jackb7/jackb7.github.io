@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>assignment 13</title>
+    <style>
+      .myGrid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: minmax(50px, auto);
+        grid-template-areas:
+          "header header header header header"
+          "sidenav content content content image"
+          "sidenav image content content content"
+          "footer footer footer footer footer";
+      }
+      header {
+        background-color: lightblue;
+        padding: 24px;
+        grid-area: header;
+
+      }
+      nav {
+        background-color: lightblue;
+        padding: 36px;
+        grid-area: sidenav;
+      }
+      header {}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="block myGrid">
+        <h1> Grid Assignment</h1>
+      </div>
+    </header>
+    <nav>
+      NAVIGATION GOES HERE
+    </nav>
+    <main>
+      <div class"">
+        <img src="../images/cooloilpaintart.webp">
+
+    </div>
+    </main>
+  </body>
+</html>

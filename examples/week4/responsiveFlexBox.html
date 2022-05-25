@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Responsive Text Box example</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      header {
+        background-color: skyblue;
+        font-size: 24px;
+        padding: 12px 48px;
+      }
+      .normalLink,
+      .importantLink {
+        padding: 12px 24px;
+      }
+      .normalLink:hover,
+      .importantLink:hover {
+        cursor: pointer;
+        opacity: 60%;
+      }
+      .normalLink {
+        background-color: coral;
+      }
+      .importantLink {
+        background-color: gold;
+      }
+      nav {
+        display: flex;
+      }
+      nav .normalLink,
+      nav .importantLink {
+        flex-grow: 1;
+        text-align: center;
+      }
+      main {
+        padding: 12px 48px;
+      }
+      footer {
+        background-color: lavender;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      footer p {
+        flex-basis: 100%;
+        text-align: center;
+      }
+      footer .importantLink {
+        flex-grow: 2;
+        text-align: center;
+      }
+
+      @media screen and (min-width: 480px) and (max-width: 799px) {
+        header {
+          font-size: 18px;
+        }
+        header,
+        main {
+          padding: 4px 36px;
+        }
+        nav {
+          flex-wrap: wrap;
+        }
+        nav .importantLink {
+          flex-basis: 100%;
+          padding: 16px;
+        }
+        nav .normalLink {
+          flex-basis: 33.33%;
+          padding: 20px;
+        }
+        footer p {
+          order: 2;
+        }
+        footer .importantLink {
+          order: 1;
+          padding: 36px;
+        }
+      }
+
+      @media screen and (max-width: 479px) {
+        header {
+          font-size: 14px;
+        }
+        header,
+        main {
+          padding: 4px 24px;
+        }
+        nav,
+        footer {
+          flex-direction: column;
+        }
+        footer .importantLink {
+          order: 1;
+        }
+        footer .importantLink:last-child {
+          order: 3;
+        }
+        footer p {
+          order: 2;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Responsive Flex Box Example</h1>
+    </header>
+    <nav>
+      <div class="importantLink">Important Link 1</div>
+      <div class="normalLink">Link 1</div>
+      <div class="normalLink">Link 2</div>
+      <div class="normalLink">Link 3</div>
+      <div class="importantLink">Important Link 2</div>
+    </nav>
+    <main>
+      <p>
+        Ne multos arbitrantur. Quibusdam illum malis e enim o ab eu
+        despicationes, fugiat arbitror ea commodo et et voluptate si
+        voluptate, constias se esse, commodo magna vidisse possumus,
+        pariatur dolor laborum ubi occaecat sunt enim possumus nisi.
+        Quo quem occaecat comprehenderit o culpa excepteur non
+        deserunt, et duis appellat possumus, litteris aut sint. Sed
+        culpa enim labore officia.Quem voluptate ubi quamquam, do
+        nisi quo nisi, mentitum summis tamen commodo fugiat, ullamco
+        quid si vidisse coniunctione. In multos adipisicing, officia
+        fugiat ita occaecat consectetur non ex ubi exercitation, et
+        sunt non quorum ut nescius quem quae arbitror export ab non
+        non velit minim nulla quo ab est nisi enim fore ad excepteur
+        praesentibus in officia. Non cupidatat ita arbitror, quis
+        deserunt est doctrina, ex velit tamen irure iudicem nam nam
+        legam quem ut iudicem, incididunt voluptatibus e offendit,
+        irure incididunt a sempiternum an voluptate eruditionem iis
+        deserunt, quo ex culpa labore velit. Illum mandaremus id
+        culpa ipsum, probant domesticarum ab possumus, e nam noster
+        quorum fore, est noster incurreret voluptate.
+      </p>
+    </main>
+    <footer>
+      <p>Thanks for stopping by hope it helped</p>
+      <div class="importantLink">Other Important Link 1</div>
+      <div class="importantLink">Other Important Link 2</div>
+    </footer>
+  </body>
+</html>
