@@ -9,8 +9,8 @@
         grid-auto-rows: minmax(50px, auto);
         grid-template-areas:
           "header header header header header"
-          "sidenav image2 content content image"
-          "sidenav image2 content content image"
+          "sidenav content content content content"
+          "sidenav content content content content"
           "sidenav footer footer footer footer";
       }
       header {
@@ -29,13 +29,15 @@
       }
       img {
         height: 200px;
-        grid-area: image;
       }
       main {
         grid-area: content;
       }
-      main p {
-        grid-area: content;
+      #picture1 {
+          float: right;
+      }
+      #picture2 {
+        float: left;
       }
 
     </style>
@@ -52,6 +54,7 @@
       <a href="#">Link 4</a>
     </nav>
     <main>
+      <img id="picture2" src="../images/mocklogo.jpg">
       <p>Veniam expetendis et firmissimum, tamen de constias si sed
         sunt consequat expetendis, magna doctrina et occaecat de ea
         quorum nostrud praesentibus, do eu amet nulla illum in
@@ -63,6 +66,7 @@
         iudicem. Ne pariatur est proident, tempor concursionibus
         laborum malis arbitror qui quae nostrud familiaritatem,
         noster ut fabulas. </p>
+        <img id="picture1" src="../images/cooloilpaintart.webp">
         <p>
           Occaecat ipsum litteris de fugiat aliquip firmissimum,
           voluptate in esse do minim ex incurreret hic admodum dolore
@@ -84,8 +88,7 @@
           senserit constias.
         </p>
     </main>
-    <img src="../images/mocklogo.jpg">
-    <img src="../images/cooloilpaintart.webp">
+
     </div>
   </body>
 </html>
