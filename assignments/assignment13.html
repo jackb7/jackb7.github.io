@@ -9,9 +9,9 @@
         grid-auto-rows: minmax(50px, auto);
         grid-template-areas:
           "header header header header header"
-          "sidenav content content content image"
-          "sidenav image content content content"
-          "footer footer footer footer footer";
+          "sidenav image2 content content image"
+          "sidenav image2 content content image"
+          "sidenav footer footer footer footer";
       }
       header {
         background-color: lightblue;
@@ -20,28 +20,72 @@
 
       }
       nav {
-        background-color: lightblue;
-        padding: 36px;
+        background-color: skyblue;
+        padding: 66px;
         grid-area: sidenav;
       }
-      header {}
+      header {
+
+      }
+      img {
+        height: 200px;
+        grid-area: image;
+      }
+      main {
+        grid-area: content;
+      }
+      main p {
+        grid-area: content;
+      }
 
     </style>
   </head>
   <body>
+    <div class="block myGrid">
     <header>
-      <div class="block myGrid">
         <h1> Grid Assignment</h1>
-      </div>
     </header>
     <nav>
-      NAVIGATION GOES HERE
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+      <a href="#">Link 4</a>
     </nav>
     <main>
-      <div class"">
-        <img src="../images/cooloilpaintart.webp">
-
-    </div>
+      <p>Veniam expetendis et firmissimum, tamen de constias si sed
+        sunt consequat expetendis, magna doctrina et occaecat de ea
+        quorum nostrud praesentibus, do eu amet nulla illum in
+        nescius et quid voluptate, o eu culpa doctrina. Voluptate
+        fore legam non esse et id cillum anim e cupidatat. Ab aliqua
+        ne nulla et laborum velit qui nostrud relinqueret.An illum
+        id quid. Veniam litteris sempiternum si e elit sint tempor
+        ingeniis, laboris ex veniam admodum iis ad minim vidisse
+        iudicem. Ne pariatur est proident, tempor concursionibus
+        laborum malis arbitror qui quae nostrud familiaritatem,
+        noster ut fabulas. </p>
+        <p>
+          Occaecat ipsum litteris de fugiat aliquip firmissimum,
+          voluptate in esse do minim ex incurreret hic admodum dolore
+          dolor vidisse legam sed aliqua ad consequat et aliqua, non
+          anim quamquam officia de se pariatur an offendit. Quem eu
+          laborum id expetendis illum quid vidisse culpa, malis
+          pariatur imitarentur, doctrina noster id constias
+          domesticarum a quibusdam qui multos ne est et cillum aute
+          labore, mentitum si labore possumus, admodum aliqua fore te
+          eram. An est sint quibusdam. Quo magna quid o
+          proident.Offendit export se mentitum domesticarum, iis ipsum
+          ne culpa. Singulis sunt deserunt est aliqua incurreret et
+          relinqueret est tempor excepteur si minim quis ne legam hic
+          quo esse senserit. Se nulla sed duis, pariatur se irure.
+          Fugiat distinguantur cupidatat elit arbitror te de ipsum
+          laboris quamquam aut legam nescius qui minim culpa ea ea
+          nisi sint et possumus, non cillum instituendarum aut hic sed
+          irure cupidatat, proident summis cillum quo summis ea sunt
+          senserit constias.
+        </p>
     </main>
+    <img src="../images/mocklogo.jpg">
+    <img src="../images/cooloilpaintart.webp">
+    </div>
   </body>
 </html>
