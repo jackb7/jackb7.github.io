@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>Landging Page</title>
+    <title>Contact Page</title>
     <style>
 
     body {
+      font-family: sans-serif;
       text-align: center;
       margin: -8px
     }
@@ -18,6 +19,7 @@
 
     }
     header h1 {
+      font-family: Verdana; sans-serif;
       color: white;
       border-bottom: 3px solid white;
       padding: 20px
@@ -55,6 +57,39 @@
         background-color: royalblue;
         color: white;
     }
+    .grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-auto-rows: minmax(40px, auto);
+      grid-template-areas:
+      "left blank blank right"
+      "left heading heading right"
+      "left content content right"
+      "left content content right"
+      "left content content right"
+      "footer footer footer footer";
+
+
+    }
+    .block {
+      background-color: gray;
+      grid-area: content;
+      padding: 24px;
+    }
+    
+    .footer {
+      background-color: royalblue;
+      padding: 12px 24px;
+      color: white;
+      text-align: center;
+    }
+    main h2{
+      grid-area: heading;
+      font-size: 20px;
+      margin-top: 50px;
+    }
+
+
     </style>
   </head>
   <body>
@@ -65,12 +100,30 @@
         <li><a href="portfoliopage.html" class="contact">Gallery</a></li>
         <li><a href="index.html" class="portfolio">Home</a></li>
         <li><a href="aboutpage.html" class="about">About</a></li>
+        <li><a href="contactpage.html" class="about">Contact</a></li>
       </ul>
     </nav>
   </header>
   <main>
-
+    <div class="grid">
+      <h2>Enter Email</h2>
+      <div class="block">
+        Text Box
+      </div>
+    </div>
+      <div class="grid">
+        <h2>Enter Name</h2>
+        <div class="block">
+          Text Box
+        </div>
+      </div>
+      <div class="grid">
+        <h2>Enter Your Message Here</h2>
+        <div class="block">
+          Text Box
+        </div>
+      </div>
   </main>
-  <footer></footer>
+  <footer class="footer">This is footer for my Contact Page</footer>
   </body>
 </html>
