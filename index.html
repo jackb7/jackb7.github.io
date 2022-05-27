@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>Landging Page</title>
+    <title>Contact Page</title>
     <style>
 
     body {
+      font-family: sans-serif;
       text-align: center;
       margin: -8px
     }
@@ -18,6 +19,7 @@
 
     }
     header h1 {
+      font-family: Verdana; sans-serif;
       color: white;
       border-bottom: 3px solid white;
       padding: 20px
@@ -55,24 +57,86 @@
         background-color: royalblue;
         color: white;
     }
+    .grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-auto-rows: minmax(40px, auto);
+      grid-template-areas:
+      "left blank blank right"
+      "left heading heading right"
+      "left content content right"
+      "left content content right"
+      "footer footer footer footer";
+
+
+    }
+    .block {
+      background-color: gray;
+      grid-area: content;
+      padding:50px;
+    }
+    .block1 {
+
+      grid-area: heading;
+      padding: 24px;
+    }
+    .footer {
+      background-color: royalblue;
+      padding: 12px 24px;
+      color: white;
+      text-align: center;
+    }
+    main h2{
+      grid-area: heading;
+      font-size: 28px;
+      margin-top: 0px;
+    }
+
+
     </style>
   </head>
   <body>
   <header>
-    <h1>My Portfolio</h1>
+    <h1>Landing Page</h1>
     <nav>
       <ul>
-        <li><a href="contactpage.html" class="contact">Contact</a></li>
-        <li><a href="portfoliopage.html" class="portfolio">Gallery</a></li>
+        <li><a href="portfoliopage.html" class="contact">Gallery</a></li>
+        <li><a href="index.html" class="portfolio">Home</a></li>
         <li><a href="aboutpage.html" class="about">About</a></li>
+        <li><a href="contactpage.html" class="about">Contact</a></li>
       </ul>
     </nav>
   </header>
   <main>
-
+    <div class="grid">
+      <h2>Heading</h2>
+      <div class="block">
+        Image
+      </div>
+    </div>
+      <div class="grid">
+        <div class="block1">
+          <p>
+            Nulla iudicem do malis elit. Non tempor noster ex iudicem a
+            arbitror esse quae ab aliqua. Summis doctrina eu minim
+            quem.O e esse cillum malis, o nulla ab malis. Quibusdam non
+            veniam admodum. Veniam ut doctrina est nisi consequat
+            voluptatibus ne sunt vidisse oMinim cernantur aut nulla summis. Summis mandaremus e
+            doctrina. An nulla e labore.Constias sunt offendit, ne enim
+            si amet. Sunt proident ne probant. Aliquip o quae, sunt
+            sempiternum litteris quid ullamco, quamquam labore illum
+            consequat quorum, amet qui ubi summis offendit, ad elit
+            incididunt eiusmod ubi irure ingeniis in voluptate, litteris
+            aut tempor sed e in domesticarum. De magna vidisse eu te
+            anim quid nisi vidisse aut ubi anim tamen veniam doctrina,
+            laboris instituendarum de proident. relinqueret, id quibusdam si
+            doctrina de sed velit senserit voluptatibus, sint
+            transferrem incurreret quem occaecat si summis appellat
+            fabulas iis litteris quid incididunt.
+          </p>
+        </div>
+      </div>
   </main>
-  <footer>
-
-  </footer>
+  <footer class="footer">This is footer for my Contact Page</footer>
   </body>
 </html>
