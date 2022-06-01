@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Transitions Examples</title>
+    <style>
+    #transition1 {
+      transition-property: color;
+      transition-duration: 0.5s;
+      transition-delay: 0.5s;
+    }
+    #transition1:hover {
+      color: red;
+    }
+    #box {
+      box-sizing: border-box;
+      height: 200px;
+      width: 200px;
+      background-color: red;
+      transition:
+        background-color 2s,
+        border-radius 2s;
+
+    }
+    #box:hover {
+      background-color: blue;
+      border-radius: 50%;
+    }
+    img {
+      width: 200px;
+      transition: transform 1s;
+    }
+    img:hover {
+      transform: scale(3) rotate(360deg);
+    }
+    </style>
+  </head>
+  <body>
+    <h1 id="transition1">
+      this is a basic transition
+    </h1>
+    <div id="box"></div>
+    <img src="../../images/cooloilpaintart.webp">
+    <p>
+      Ne ipsum sed dolore qui ab ab velit cernantur est ne
+      appellat hic cernantur ut ex et transferrem. Aliquip id
+      appellat. O voluptate quo iudicem.Litteris hic veniam
+      pariatur. Illum voluptatibus offendit quae cernantur. Anim
+      eruditionem incididunt malis possumus, mentitum elit
+      pariatur, aut ita multos sunt amet, dolore eu mandaremus eu
+      tempor, et tamen ingeniis de irure eiusmod nam laboris, quo
+      si relinqueret, eu nulla quorum labore quibusdam. Cillum se
+      do amet offendit, aut nulla coniunctione.
+    </p>
+  </body>
+</html>

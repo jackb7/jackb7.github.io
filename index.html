@@ -59,14 +59,15 @@
     }
     .grid{
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr repeat(3, 333px) 1fr;
       grid-auto-rows: minmax(40px, auto);
       grid-template-areas:
-      "left blank blank right"
-      "left heading heading right"
-      "left content content right"
-      "left content content right"
-      "footer footer footer footer";
+      ".     .      .    ."
+      ". heading heading ."
+      ". content content ."
+      ". content content ."
+      ". footer  footer  .";
+
 
 
     }
@@ -91,6 +92,33 @@
       font-size: 28px;
       margin-top: 0px;
     }
+    @media screen and (max-width: 479px) {
+      header {
+        font-size: 14px;
+      }
+      ul li {
+        font-size: 18px;
+        margin-right: 20px;
+        margin-left: 10px;
+      }
+      nav {
+        display: flex;
+      }
+      nav ul li a {
+        flex-direction: column;
+      }
+      .block1 {
+        padding: 0;
+        padding-top: 0px;
+      }
+      .grid {
+        grid-auto-rows: minmax(10px, auto);
+      }
+      section {
+        text-align: center;
+      }
+
+    }
 
 
     </style>
@@ -114,6 +142,8 @@
         Image
       </div>
     </div>
+    </main>
+    <section>
       <div class="grid">
         <div class="block1">
           <p>
@@ -136,7 +166,7 @@
           </p>
         </div>
       </div>
-  </main>
+    </section>
   <footer class="footer">This is footer for my Landing Page</footer>
   </body>
 </html>
