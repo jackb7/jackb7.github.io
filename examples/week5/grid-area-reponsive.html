@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Grid area responsive</title>
+    <style>
+      .myGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: minmax(50px, auto);
+        grid-template-areas:
+          "myHeader myHeader myHeader"
+          "sidenav  content  content";
+      }
+      header {
+        background-color: lightgreen;
+        padding: 36px;
+        grid-area: myHeader;
+      }
+      nav {
+        background-color: #DDFFDD;
+        padding: 36px;
+        grid-area: sidenav;
+      }
+      main {
+        padding: 36px;
+        grid-area: content;
+      }
+
+      @media screen and (max-width: 480px); {
+        .myGrid {
+          grid-template-columns: 1fr;
+          grid-template-areas:
+          "myHeader"
+          "sidenav"
+          "content";
+        }
+        header,
+        nav,
+        main {
+          padding: 18px;
+
+        }
+        header,
+        nav {
+          text-align: center;
+        }
+        header h1 {
+          font-size: 24px;
+
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="myGrid">
+      <header>
+        <h1>Grid Areas Responsive Demo</h1>
+      </header>
+      <nav>NAVAGATION GOES HERE</nav>
+      <main>
+        <p>
+          Sed ex nulla multos summis, pariatur sed voluptate se ne
+          irure iudicem appellat, ad quorum admodum, fabulas cillum
+          offendit iis non ipsum velit hic incurreret ea consequat
+          firmissimum hic eiusmod, summis reprehenderit proident nisi
+          officia. Quem offendit in possumus, nulla pariatur se
+          mentitum, nam te tamen fore quae, nescius quorum quis
+          commodo labore ab cupidatat quid quorum si elit, ut eram
+          laboris non sint vidisse quo admodum, ea fugiat quid eram
+          voluptate. Si iudicem cohaerescant ubi aut noster
+          possumus.Consequat coniunctione ea excepteur nam sed nulla
+          de tempor, qui de dolore labore summis sed o duis aute o
+          probant. Expetendis sed labore. Fabulas sed quid ullamco,
+          nostrud ita quamquam.
+        </p>
+        <p>
+          Qui ingeniis an cernantur, consequat ab commodo a cupidatat
+          labore illum quo dolor nam non nulla illustriora. Ut officia
+          fidelissimae, quibusdam tempor ipsum singulis fore, ut
+          proident est appellat e hic sint proident coniunctione, quid
+          laborum qui magna sunt et ita culpa ut aliqua do minim
+          incurreret ullamco, sunt arbitror ita magna culpa. Officia
+          quo cillum, noster domesticarum incididunt cillum
+          doctrina.Labore quamquam ne ullamco, qui hic relinqueret,
+          qui non irure quibusdam e labore consequat quo philosophari
+          a arbitror veniam commodo doctrina, ullamco ne culpa ab ubi
+          aliquip philosophari, hic quae dolor te appellat. Ullamco te
+          quid laborum. Qui nisi iudicem expetendis.
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
