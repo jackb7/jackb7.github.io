@@ -69,10 +69,12 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns:75px 1fr 1fr 1fr 75px;
       grid-auto-rows:
-      "left picture picture right"
-      "left picture picture right"
+      ". picture picture picture ."
+      ". picture picture picture ."
+      ". picture picture picture .";
+      align-content: center;
     }
     .block3 {
       background-color: green;
