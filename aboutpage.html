@@ -49,8 +49,8 @@
       text-decoration: none;
     }
       ul li a:hover {
-      background-color: white;
-      color: royalblue;
+      background-color: seagreen;
+      color: white;
 
     }
       ul li a:active {
@@ -59,21 +59,21 @@
     }
     .grid{
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-auto-rows: minmax(40px, auto);
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-auto-rows: minmax(0px, auto);
       grid-template-areas:
-      "left blank blank right"
-      "left heading heading right"
-      "left content content right"
-      "left content content right"
-      "footer footer footer footer";
+      "left blank  right"
+      "left heading  right"
+      "left content  right"
+      "left content  right"
+      "footer footer footer";
 
 
     }
     .block {
-      background-color: gray;
+      background-color: black;
       grid-area: content;
-      padding:50px;
+      padding:12px;
     }
     .block1 {
 
@@ -90,6 +90,10 @@
       grid-area: heading;
       font-size: 20px;
       margin-top: 50px;
+    }
+    img {
+      height: 400px;
+      grid-area: content;
     }
     @media screen and (max-width: 479px) {
 
@@ -112,9 +116,7 @@
   <main>
     <div class="grid">
       <h2>About Me</h2>
-      <div class="block">
-        Image
-      </div>
+      <img alt="portrait" src="images/Portrait.png"class="block">
     </div>
       <div class="grid">
         <div class="block1">

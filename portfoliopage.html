@@ -64,13 +64,24 @@
       border: 3px solid black;
       border-radius: 5px;
       display: inline-block;
-      float: left;
       padding: 12px 24px;
       cursor: pointer;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-auto-rows:
+      "left picture picture right"
+      "left picture picture right"
+    }
+    .block3 {
+      background-color: green;
+      grid-area: picture;
     }
     @media screen and (max-width: 479px) {
 
     }
+
     </style>
   </head>
   <body>
@@ -87,11 +98,11 @@
   </header>
   <main>
    <div class="grid">
-    <img src="images/JokerPoster.png" alt="joker poster" width="21%" class="picture1"/>
-    <img src="images/FOSSILAdShot.png" alt="portfolio picture"  width="25%" class="picture1"/>
-    <img src="images/fallfashioncover.png" class="picture1" alt="portfolio picture" width="24%"/>
-    <img src="images/fallfashioncatalouge.PNG" class="picture1" width="24%"/>
-    <img src="images/wishtreePortfolio.png" alt="wishtree book cover" width="40%">
+    <img src="images/JokerPoster.png" alt="joker poster" width="43%" class="picture1"/>
+    <img src="images/FOSSILAdShot.png" alt="portfolio picture"  width="50%" class="picture1"/>
+    <img src="images/fallfashioncover.png" class="picture1" alt="portfolio picture" width="50%"/>
+    <img src="images/fallfashioncatalouge.PNG" class="picture1" width="50%"/>
+    <img src="images/wishtreePortfolio.png" alt="wishtree book cover" width="70%">
   </div>
   </main>
   <footer></footer>
