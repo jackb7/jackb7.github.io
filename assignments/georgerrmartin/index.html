@@ -6,6 +6,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
     <style>
+    body {
+      background-image: url(../../images/sitebackground.jpg);
+      background-size: cover;
+    }
     #gridLayout {
       display: grid;
       grid-template-columns: 1fr repeat(3, 333px) 1fr;
@@ -54,12 +58,40 @@
     #bannerContainer {
       grid-area: banner;
     }
+    #bannerContainer img {
+      width: 100%;
+    }
     #cardsContainer {
       grid-area: cards;
+      display: flex;
+    }
+    #cardsContainer img {
+      flex-grow:1;
     }
     aside {
       grid-area: aside;
     }
+    #moreAppearancesContainer {
+      background-image: url(../../images/events-bg.jpg);
+      background-position: right bottom;
+      background-repeat: no-repeat;
+      background-color: black;
+      padding: 18px;
+    }
+    #moreAppearancesContainer h3 {
+      font-family: 'Montaga', serif;
+      color: white;
+    }
+    .yellow {
+      color: #dbbF73;
+    }
+    .underline {
+      text-decoration: underline;
+    }
+    .white {
+      color: white;
+    }
+
     main {
       grid-area: blog;
     }
@@ -81,7 +113,7 @@
           "cards"
           "aside"
           "footer"
-          "bottom"
+          "bottom";
         }
         header {
           text-align: center;
@@ -93,12 +125,14 @@
           flex-direction: column;
           align-items: center;
         }
-        nav ul li  {
-          background-color: #E8E8E8;
+        #cardsContainer {
+          flex-direction: column;
         }
-        img {
-          ;
+        #cardsContainer img {
+          flex-grow: 0;
+          width: 100%;
         }
+
     }
     </style>
   </head>
@@ -119,9 +153,23 @@
           <li><a href="#">MERCHANDISE</a></li>
         </ul>
       </nav>
-      <section id="bannerContainer"><img src="http://georgerrmartin.com/wp-content/uploads/2022/03/GRRM-wildcards-callout.jpg" alt="This is the banner" width="100%" ></section>
-      <section id="cardsContainer">cards</section>
-      <aside>aside</aside>
+      <section id="bannerContainer">
+        <img src="../../images/FandB-banner.jpg" alt="Fire and Blood Book">
+      </section>
+      <section id="cardsContainer">
+        <img src="../../images/card1.jpg" alt="The jean cocteau Cinema">
+        <img src="../../images/card2.png" alt="George RR martin Newsletter">
+        <img src="../../images/card3.jpg" alt="DarkSword Miniatures Now available">
+      </section>
+      <aside>
+        <div id="moreAppearancesContainer">
+          <h3> NEXT APPERANCE</h3>
+          <p class="yellow">August 26th-28th</p>
+          <p><span class="underline white">Bubonicon 53</span> <span
+          class="white">Guest</span></p>
+          <img src="../../images/2222.jpg" alt="more apperances">
+        </div>
+      </aside>
       <main>blog posts</main>
       <footer>footer</footer>
       <div id="bottom">bottom</div>
