@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>Contact Page</title>
+    <title>About Page</title>
     <style>
 
     body {
@@ -33,7 +33,6 @@
       font-size: 20px
     }
     ul li a {
-      display: inline-block
     }
     .contact {
       color: white;
@@ -50,7 +49,7 @@
     }
       ul li a:hover {
       background-color: seagreen;
-      color: white;
+      color: ;
 
     }
       ul li a:active {
@@ -59,45 +58,81 @@
     }
     .grid{
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-auto-rows: minmax(0px, auto);
+      grid-template-columns: 50px repeat(2, 1fr) 50px;
+
       grid-template-areas:
-      "left blank  right"
-      "left heading  right"
-      "left content  right"
-      "left content  right"
-      "footer footer footer";
+      ".     .      .    ."
+      ". heading sidenav ."
+      ". content sidenav ."
+      ". content sidenav ."
+      "footer footer  footer  footer";
+
 
 
     }
     .block {
-      background-color: black;
-      grid-area: content;
-      padding:12px;
+      background-color: ;
+      grid-area: sidenav;
+      padding:;
+      flex-grow: 1 2 1;
     }
     .block1 {
 
-      grid-area: heading;
+      grid-area: content;
       padding: 24px;
     }
     .footer {
       background-color: royalblue;
       padding: 12px 24px;
       color: white;
+      margin-top: 200px;
+      grid-area: footer;
       text-align: center;
     }
     main h2{
-      grid-area: heading;
-      font-size: 20px;
-      margin-top: 50px;
-    }
-    img {
-      height: 400px;
       grid-area: content;
+      font-size: 28px;
+    }
+    main img {
+
+      width: 20%;
     }
     @media screen and (max-width: 479px) {
+      .grid{
+        display: grid;
+        grid-template-columns: 1fr repeat(2, 6fr) 1fr;
+        grid-auto-rows: minmax(10px, auto);
+      }
+      header {
+        font-size: 14px
+      }
+      ul li {
+        font-size: 18px;
+      }
+      nav ul li{
+        display: flex;
+        flex-direction: row;
+        border: 2px solid white;
+        margin-top: 10px;
+      }
+      nav ul li:hover {
+        background-color: seagreen;
+        color: royalblue;
+      }
+      .justifyContent {
+        justify-content: center;
+      }
+
+      .block1 {
+        font-size: 12px;
+      }
+      main img {
+        width: 55%;
+      }
+
 
     }
+
 
     </style>
   </head>
@@ -106,17 +141,19 @@
     <h1>About Page</h1>
     <nav>
       <ul>
-        <li><a href="portfoliopage.html" class="contact">Gallery</a></li>
-        <li><a href="index.html" class="portfolio">Home</a></li>
-        <li><a href="aboutpage.html" class="about">About</a></li>
-        <li><a href="contactpage.html" class="about">Contact</a></li>
+        <li class="justifyContent"><a href="portfoliopage.html" class="contact">Gallery</a></li>
+        <li class="justifyContent"><a href="index.html" class="portfolio">Home</a></li>
+        <li class="justifyContent"><a href="aboutpage.html" class="about">About</a></li>
+        <li class="justifyContent"><a href="contactpage.html" class="about">Contact</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <div class="grid">
-      <h2>About Me</h2>
-      <img alt="portrait" src="images/Portrait.png"class="block">
+      <h2>Heading</h2>
+      <div class="block">
+        <img src="images/Portrait.png" alt="landing page picture">
+      </div>
     </div>
       <div class="grid">
         <div class="block1">
@@ -140,7 +177,8 @@
           </p>
         </div>
       </div>
+    </section>
   </main>
-  <footer class="footer">This is footer for my About Page</footer>
+  <footer class="footer">This is footer for my Landing Page</footer>
   </body>
 </html>
