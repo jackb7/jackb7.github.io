@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Assignment 14</title>
+    <style>
+      .textInput input {
+        padding: 8px;
+        margin-top: 30px;
+        width:200px;
+      }
+      #firstNameContainer input {
+      border: 2px solid salmon;
+      border-radius: 4px
+      }
+      input[type=radio] {
+        margin-left:-75px;
+        margin-right:-50px;
+      }
+      input[type=text] {
+        margin-left: 16px;
+      }
+
+
+      #buttonContainer input[type=submit] {
+        border: 2px solid darkgray;
+        box-shadow: 1px 3px 7px;
+        border-radius: 8px;
+        cursor: alias;
+
+      }
+      
+    </style>
+  </head>
+  <body>
+    <form>
+      <h2>Assignment 14</h2>
+      <p>Whats your name?</p>
+      <div id="firstNameContainer"class="textInput">
+        <label for="firstNameId"> First Name!</label>
+        <input type="text" id="firstNameId" name="firstName">
+      </div>
+      <div id="middleNameContainer" class="textInput">
+        <label for="middleNameId">Middle Name!</label>
+        <input type="text" id="middleNameId" name="middleName"
+      </div>
+      <div id="lastNameContainer" class="textInput">
+        <label for="lastNameId"> Last Name!</label>
+        <input type="text" id="lastNameId" name="lastName">
+      </div>
+      <p>Whats your favorite type of movie?</p>
+      <div>
+        <input type="radio" id="dramaMovie" name="movie" value="dMovie">
+        <label for="dramaMovie">
+          Drama Movies
+        </label>
+      </div>
+      <div>
+        <input type="radio" id="comedyMovie" name="movie" value="cMovie">
+        <label for="comedyMovie">
+          Comedy Movies
+        </label>
+      </div>
+      <div>
+        <input type="radio" id="horrorMovie" name="movie" value="hMovie">
+        <label for="horrorMovie">
+          Horror Movies
+        </label>
+      </div>
+      <div id="buttonContainer">
+        <input type="submit" value="Click to Submit This Form!">
+      </div>
+    </form>
+  </body>
+</html>

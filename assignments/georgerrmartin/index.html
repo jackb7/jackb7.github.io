@@ -42,8 +42,10 @@
     }
     nav{
       grid-area: navbar;
+      background-color: white;
     }
     nav ul {
+
       list-style-type: none;
       padding: 0px;
       margin: 0px;
@@ -62,11 +64,15 @@
       width: 100%;
     }
     #cardsContainer {
+
+      padding: 14px 6px;
       grid-area: cards;
       display: flex;
     }
     #cardsContainer img {
       flex-grow:1;
+      margin: 6px  0px 0px 2px;
+      border: 3px solid gray;
     }
     aside {
       grid-area: aside;
@@ -82,6 +88,7 @@
       font-family: 'Montaga', serif;
       color: white;
     }
+    #moreAppearancesContainer
     .yellow {
       color: #dbbF73;
     }
@@ -94,12 +101,31 @@
 
     main {
       grid-area: blog;
+      padding-left: 24px;
+    }
+    main h2 {
+      font-size: 28px;
+      font-family: 'Montaga', serif;
+    }
+    main p {
+      font-family: 'Verdana', 'Geneva', sans-serif;
+      font-size: 14px;
     }
     footer {
       grid-area: footer;
     }
     #bottom {
       grid-area: bottom;
+    }
+    .blogBackgroud {
+      background-color: white;
+    }
+    aside .asidepic {
+      grid-area:aside;
+      width: 100%;
+    }
+    main h3 {
+      color: #0080ff;
     }
 
     @media screen and (max-width: 1000px) {
@@ -132,7 +158,6 @@
           flex-grow: 0;
           width: 100%;
         }
-
     }
     </style>
   </head>
@@ -169,8 +194,35 @@
           class="white">Guest</span></p>
           <img src="../../images/2222.jpg" alt="more apperances">
         </div>
+        <img class="asidepic"src="../../images/stagecoach-v2.jpg"
+         alt="Creating Carrer pathways for new mexicans in the film and television industry">
+        <img class="asidepic" src="../../images/valyrian-steel-v3.jpg">
       </aside>
-      <main>blog posts</main>
+      <main class="blogBackgroud">
+          <h2>CURRENT GRRM BLOG POSTS</h2>
+          <h3>Storemaiden Is Back</h3>
+          <p>
+            There’s a brand new treat for Wild Cards fans over at
+            Tor.com. “Hearts of Stone” is a terrific new novelette
+            from Emma Newman.   It marks the return of Stonemaiden,
+            the Cornish ace first introduced in KNAVES OVER QUEENS.
+            That was… <a href="#">Read more »</a>
+          </p>
+
+          <h3>Here Come The Dragons</h3>
+          <p>
+            Are those dragons I see? Yes indeed. It’s May, which means the August 21 premiere of HOUSE OF THE DRAGON is
+            only a few months away. And HBO has just released a new trailer, to give you another taste of…<a href="#">Read more »</a>
+          </p>
+
+          <h3>The Winds of June</h3>
+          <p>
+            The Dark Winds will start blowing in June.   June 12, to be precise.
+            That’s the day that DARK WINDS, a new series based on the classic
+            bestselling Navajo detective novels by Tony Hillerman, will premiere on AMC and AMC+.
+            I... <a href="#">Read more »</a>
+          </p>
+      </main>
       <footer>footer</footer>
       <div id="bottom">bottom</div>
     </div>

@@ -59,12 +59,12 @@
     .grid{
       display: grid;
       grid-template-columns: 50px repeat(2, 1fr) 50px;
-
+      grid-auto-rows: minmax(20px, auto);
       grid-template-areas:
       ".     .      .    ."
-      ". heading sidenav ."
-      ". content sidenav ."
-      ". content sidenav ."
+      ". heading heading ."
+      ". content content ."
+      ". content content ."
       "footer footer  footer  footer";
 
 
@@ -72,13 +72,12 @@
     }
     .block {
       background-color: ;
-      grid-area: sidenav;
+      grid-area: content;
       padding:;
-      flex-grow: 1 2 1;
     }
     .block1 {
 
-      grid-area: content;
+      grid-area: heading;
       padding: 24px;
     }
     .footer {
@@ -90,12 +89,11 @@
       text-align: center;
     }
     main h2{
-      grid-area: content;
+      grid-area: heading;
       font-size: 28px;
     }
     main img {
-
-      width: 20%;
+      width: 25%;
     }
     @media screen and (max-width: 479px) {
       .grid{
@@ -126,9 +124,6 @@
       .block1 {
         font-size: 12px;
       }
-      main img {
-        width: 55%;
-      }
 
 
     }
@@ -138,7 +133,7 @@
   </head>
   <body>
   <header>
-    <h1>About Page</h1>
+    <h1>Landing Page</h1>
     <nav>
       <ul>
         <li class="justifyContent"><a href="portfoliopage.html" class="contact">Gallery</a></li>
@@ -155,6 +150,7 @@
         <img src="images/Portrait.png" alt="landing page picture">
       </div>
     </div>
+    <section>
       <div class="grid">
         <div class="block1">
           <p>
