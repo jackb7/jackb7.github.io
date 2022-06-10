@@ -13,7 +13,7 @@
     #gridLayout {
       display: grid;
       grid-template-columns: 1fr repeat(3, 333px) 1fr;
-      grid-auto-rows: minmax(100px, auto);
+      grid-auto-rows: minmax(48px, auto);
       grid-template-areas:
         ". header header header ."
         ". navbar navbar navbar  ."
@@ -35,6 +35,10 @@
     }
     header {
       grid-area: header;
+
+    }
+    #socialSection {
+      text-align: right;
     }
     header h1 {
       display: inline-block;
@@ -48,9 +52,12 @@
 
       list-style-type: none;
       padding: 0px;
-      margin: 0px;
+      margin-top: 16px;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
+    }
+    nav ul li:hover {
+      background-color: gray;
     }
     nav ul li a {
       color: black;
@@ -65,17 +72,18 @@
     }
     #cardsContainer {
 
-      padding: 14px 6px;
       grid-area: cards;
       display: flex;
     }
     #cardsContainer img {
       flex-grow:1;
-      margin: 6px  0px 0px 2px;
-      border: 3px solid gray;
+      border: 1px solid gray;
+
     }
     aside {
       grid-area: aside;
+      justify-content: space-between;
+
     }
     #moreAppearancesContainer {
       background-image: url(../../images/events-bg.jpg);
@@ -103,6 +111,7 @@
       grid-area: blog;
       padding-left: 24px;
     }
+
     main h2 {
       font-size: 28px;
       font-family: 'Montaga', serif;
@@ -125,7 +134,14 @@
       width: 100%;
     }
     main h3 {
-      color: #0080ff;
+
+    }
+    main h3 a{
+      text-decoration: none;
+      color: #1c4268;
+    }
+    section {
+      justify-content: space-between;
     }
 
     @media screen and (max-width: 1000px) {
@@ -147,6 +163,9 @@
         header h1 {
           display: block;
         }
+        #socialSection {
+          text-align: center;
+        }
         nav ul {
           flex-direction: column;
           align-items: center;
@@ -166,6 +185,13 @@
       <header>
         <img src="../../images/shield-spin.jpg">
         <h1>GEORGE R. R. MARTIN</h1>
+        <img src="">
+        <div id="socialSection">
+        <form>
+          <input text="text" id="searchbar" name=" searchQuery" placeholder="Search...">
+          <input type="submit" id="searchButton" value="SEARCH">
+        </form>
+        </div>
       </header>
       <nav>
         <ul>
@@ -199,8 +225,17 @@
         <img class="asidepic" src="../../images/valyrian-steel-v3.jpg">
       </aside>
       <main class="blogBackgroud">
-          <h2>CURRENT GRRM BLOG POSTS</h2>
-          <h3>Storemaiden Is Back</h3>
+        <h2>CURRENT GRRM BLOG POSTS</h2>
+
+        <h3><a href="#">Six Days to Joe</a></h3>
+        <p>
+          Six days to go.  Six days to Joe. Leaphorn, that is. It is June 6 as I type this.
+          \Next weekend, JUNE 12, will see the debut of DARK WINDS on AMC  and AMC+.
+          Yes, it has “Winds” in the… <a href="#">Read more »</a>
+
+        </p>
+
+          <h3><a href="#">Storemaiden Is Back</a></h3>
           <p>
             There’s a brand new treat for Wild Cards fans over at
             Tor.com. “Hearts of Stone” is a terrific new novelette
@@ -209,18 +244,34 @@
             That was… <a href="#">Read more »</a>
           </p>
 
-          <h3>Here Come The Dragons</h3>
+          <h3><a href="#">Here Come The Dragons</a></h3>
           <p>
             Are those dragons I see? Yes indeed. It’s May, which means the August 21 premiere of HOUSE OF THE DRAGON is
             only a few months away. And HBO has just released a new trailer, to give you another taste of…<a href="#">Read more »</a>
           </p>
 
-          <h3>The Winds of June</h3>
+          <h3><a href="#">The Winds of June</a></h3>
           <p>
             The Dark Winds will start blowing in June.   June 12, to be precise.
             That’s the day that DARK WINDS, a new series based on the classic
             bestselling Navajo detective novels by Tony Hillerman, will premiere on AMC and AMC+.
             I... <a href="#">Read more »</a>
+          </p>
+
+          <h3><a href="#">The Dragons Are Coming</a></h3>
+          <p>
+            … they’re on the wing, and will be arriving in August.
+            Details
+            here: https://variety.com/2022/tv/news/game-of-thrones-house-of-the-dragon-premiere-date-1235215983/
+            <a href="#">Read more »</a>
+          </p>
+          <h3><a href="#">THE RISE OF THE DRAGON</a></h3>
+
+          <p>
+            We’re so excited to announce The Rise of The Dragon, a lavish visual history of House Targaryen –
+             the iconic family at the heart of HBO’s Game of Thrones prequel series, House of the Dragon –
+              featuring over 180 all-new… <a href="#">Read more »</a>
+
           </p>
       </main>
       <footer>footer</footer>
