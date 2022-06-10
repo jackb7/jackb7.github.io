@@ -52,12 +52,11 @@
 
       list-style-type: none;
       padding: 0px;
-      margin-top: 16px;
       display: flex;
       justify-content: space-around;
     }
     nav ul li:hover {
-      background-color: gray;
+      background-color: darkgray;
     }
     nav ul li a {
       color: black;
@@ -78,11 +77,13 @@
     #cardsContainer img {
       flex-grow:1;
       border: 1px solid gray;
+      padding: 8px;
 
     }
     aside {
       grid-area: aside;
       justify-content: space-between;
+      padding: 4px;
 
     }
     #moreAppearancesContainer {
@@ -143,6 +144,21 @@
     section {
       justify-content: space-between;
     }
+    footer {
+      background-color: lightgray;
+      text-align: center;
+    }
+    footer p {
+      font-family: 'Montaga', serif;
+      font-size: 20px;
+      letter-spacing: 5px;
+    }
+    #bottom img {
+      width: 100%;
+    }
+    #notABlogButton {
+      padding-top: 8px;
+     }
 
     @media screen and (max-width: 1000px) {
       #gridLayout {
@@ -176,6 +192,10 @@
         #cardsContainer img {
           flex-grow: 0;
           width: 100%;
+          padding: 2px;
+        }
+        footer p {
+          font-size: 14px;
         }
     }
     </style>
@@ -222,7 +242,7 @@
         </div>
         <img class="asidepic"src="../../images/stagecoach-v2.jpg"
          alt="Creating Carrer pathways for new mexicans in the film and television industry">
-        <img class="asidepic" src="../../images/valyrian-steel-v3.jpg">
+        <img class="asidepic" src="../../images/valyrian-steel-v3.jpg" alt="Valyrian steel Game of Thrones">
       </aside>
       <main class="blogBackgroud">
         <h2>CURRENT GRRM BLOG POSTS</h2>
@@ -271,11 +291,13 @@
             We’re so excited to announce The Rise of The Dragon, a lavish visual history of House Targaryen –
              the iconic family at the heart of HBO’s Game of Thrones prequel series, House of the Dragon –
               featuring over 180 all-new… <a href="#">Read more »</a>
-
           </p>
+          <img id="notABlogButton" src="../../images/not-a-blog.png" alt="Not a blog button">
       </main>
-      <footer>footer</footer>
-      <div id="bottom">bottom</div>
+      <footer><p>© 2022 GEORGE R.R. MARTIN. ALL RIGHTS RESERVED.</p></footer>
+      <div id="bottom">
+        <img src="../../images/footer-bg.jpg" alt="">
+      </div>
     </div>
   </body>
 </html>
