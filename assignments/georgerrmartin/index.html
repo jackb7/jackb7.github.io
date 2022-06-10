@@ -43,7 +43,9 @@
     header h1 {
       display: inline-block;
       font-family: 'Montaga', serif;
+      font-size: 48px;
     }
+
     nav{
       grid-area: navbar;
       background-color: white;
@@ -159,6 +161,11 @@
     #notABlogButton {
       padding-top: 8px;
      }
+     .headerImage {
+       justify-content: flex-end;
+     }
+
+
 
     @media screen and (max-width: 1000px) {
       #gridLayout {
@@ -178,6 +185,7 @@
         }
         header h1 {
           display: block;
+          font-size:32px;
         }
         #socialSection {
           text-align: center;
@@ -205,8 +213,10 @@
       <header>
         <img src="../../images/shield-spin.jpg">
         <h1>GEORGE R. R. MARTIN</h1>
-        <img src="">
         <div id="socialSection">
+          <img class="headerImage"src="../../images/facebook-overall.jpg">
+          <img class="headerImage2" src="../../images/twitter-overall.jpg">
+          <img class="headerImage3" src="../../images/app-overall.jpg">
         <form>
           <input text="text" id="searchbar" name=" searchQuery" placeholder="Search...">
           <input type="submit" id="searchButton" value="SEARCH">
@@ -292,7 +302,14 @@
              the iconic family at the heart of HBO’s Game of Thrones prequel series, House of the Dragon –
               featuring over 180 all-new… <a href="#">Read more »</a>
           </p>
-          <img id="notABlogButton" src="../../images/not-a-blog.png" alt="Not a blog button">
+
+          <h3><a href="#">Dealer Takes Two</a></h3>
+          <p>
+            Kings and deuces may not be as iconic…
+            or ominous… a poker hand as aces and eights, but it’s not a bad hand to be dealt…
+            and Tor will be dealing those cards to all the Wild Cards fans out… <a href="#">Read more »</a>
+          </p>
+          <a href="#"><img id="notABlogButton" src="../../images/not-a-blog.png" alt="Not a blog button"></a>
       </main>
       <footer><p>© 2022 GEORGE R.R. MARTIN. ALL RIGHTS RESERVED.</p></footer>
       <div id="bottom">
