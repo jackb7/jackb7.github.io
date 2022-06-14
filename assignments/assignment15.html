@@ -26,6 +26,16 @@
       text-align: center;
       padding-top: 115px;
     }
+    main {
+      background-color: seagreen;
+
+    }
+     main img {
+       width: 35%;
+       margin-left:34%;
+       margin-bottom: 15%;
+
+     }
     </style>
   </head>
   <header>
@@ -34,35 +44,39 @@
     </div>
   </header>
   <body>
-    <div id="hero">
-      <h2 id="countdown">A countdown to Graduation</h2>
-    </div>
-    <script tyoe="text/javascript">
-      let deadline = new  Date("July 1, 2022 23:00:00");
-      let countdown = document.getElementById("countdown");
-      countdown.innerHTML = "";
+    <main>
+      <div id="hero">
+        <h2 id="countdown">A countdown to Graduation</h2>
+      </div>
+      <img alt="picture" src="../images/BGLOGO.gif">
+      <script tyoe="text/javascript">
+        let deadline = new  Date("July 1, 2022 12:00:00");
+        let countdown = document.getElementById("countdown");
+        countdown.innerHTML = "";
 
-      function setCountdown() {
-        let now = new Date();
+        function setCountdown() {
+          let now = new Date();
 
-        // # of milliseconds between deadline and now
-        let timeLeft = deadline.getTime() - now.getTime();
+          // # of milliseconds between deadline and now
+          let timeLeft = deadline.getTime() - now.getTime();
 
-        let days = Math.floor(timeLeft / (89 * 60 * 60 * 24));
-        let hours = Math.floor(
-          (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-        let minutes = Math.floor(
-          (timeLeft % (1000 * 60 * 60)) / (1000 * 60)
-        );
-        let seconds = Math.floor(
-          (timeLeft % (1000* 60)) / 1000
-        );
+          let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24) * (12 * 1 * 1));
+          let hours = Math.floor(
+            (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          let minutes = Math.floor(
+            (timeLeft % (1000 * 60 * 60)) / (1000 * 60)
+          );
+          let seconds = Math.floor(
+            (timeLeft % (1000* 60)) / 1000
+          );
 
-        countdown.innerHTML =
-          `${days} days ${hours} hours ${minutes} minutes ${seconds} seconds left`;
-      }
-      setInterval(setCountdown, 1000);
-    </script>
+          countdown.innerHTML =
+            `${days} days ${hours} hours ${minutes} minutes ${seconds} seconds left`;
+        }
+        setInterval(setCountdown, 1000);
+      </script>
+
+    </main>
   </body>
 </html>
