@@ -10,17 +10,32 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: violet;
+      background-color: seagreen;
       height: 500px;
     }
     #countdown {
       display: inline-block;
+      margin-bottom: 250px;
+      font-size: 26px;
+    }
+    header h1 {
+      background-color: seagreen;
+      margin: 0px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding-top: 115px;
     }
     </style>
   </head>
+  <header>
+    <div>
+      <h1>A Countdown till Graduation</h1>
+    </div>
+  </header>
   <body>
     <div id="hero">
-      <h1 id="countdown">A countdown to Graduation</h1>
+      <h2 id="countdown">A countdown to Graduation</h2>
     </div>
     <script tyoe="text/javascript">
       let deadline = new  Date("July 1, 2022 23:00:00");
@@ -45,7 +60,7 @@
         );
 
         countdown.innerHTML =
-          `${days} days ${hours} hours ${minutes} minutes left`;
+          `${days} days ${hours} hours ${minutes} minutes ${seconds} seconds left`;
       }
       setInterval(setCountdown, 1000);
     </script>
