@@ -1,0 +1,23 @@
+#slideshow {
+  height: 400px;
+  text-align: center;
+}
+
+.slideshowImage {
+  width: 500px;
+}
+
+body {
+  text-align: center;
+}
+body input {
+  margin-top: 110px;
+  background: linear-gradient(35deg, darkseagreen, lightcyan);
+  cursor: crosshair;
+  padding: 6px 18px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+body input:active {
+  background: linear-gradient(35deg, lightcyan, darkseagreen);
+}
