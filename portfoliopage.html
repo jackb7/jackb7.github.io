@@ -62,22 +62,15 @@
         color: white;
     }
 
-    .button1 {
-      background: linear-gradient(to bottom, white, royalblue);
-      border: 3px solid black;
-      display: inline-block;
-      padding: 12px 24px;
-      cursor: pointer;
-    }
     .grid {
       display: grid;
-      grid-template-columns:75px 1fr 1fr 1fr 75px;
+      grid-template-columns: 10% 1fr 1fr 1fr 10%;
       grid-template-areas:
       ". header header header ."
       ". image1 image2 image3 ."
       ". image4 image5 image6 ."
       ". image7 image8 image9 .";
-      align-content: center;
+      row-gap: 50px;
     }
     .block3 {
       background-color: green;
@@ -98,6 +91,10 @@
     .picture5 {
       grid-area: image5;
     }
+    .picture6 {
+      grid-area: image6;
+    }
+  =
 
     @media screen and (max-width: 479px) {
 
@@ -124,7 +121,8 @@
      <img src="images/FOSSILAdShot.png" alt="portfolio picture"  width="70%" class="picture2"/>
      <img src="images/fallfashioncover.png" class="picture3" alt="portfolio picture" width="70%"/>
      <img src="images/fallfashioncatalouge.PNG" class="picture4" width="70%"/>
-     <img src="images/wishtreePortfolio.png" class="picture5" alt="wishtree book cover" width="110%">''
+     <img src="images/wishtreePortfolio.png" class="picture5" alt="wishtree book cover" width="110%">
+     <img src="images/SmoothieLabelFIN.png" width="90%" class="picture6" alt="SmoothieLabel">
   </div>
   </main>
   <footer></footer>

@@ -57,19 +57,15 @@
         background-color: royalblue;
         color: white;
     }
-    .grid{
+    .grid {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-auto-rows: minmax(40px, auto);
+      grid-template-columns: 10%  1fr  10%;
       grid-template-areas:
-      "left blank blank right"
-      "left heading heading right"
-      "left content content right"
-      "left content content right"
-      "left content content right"
-      "footer footer footer footer";
-
-
+      ".  headeing  ."
+      ".  content  ."
+      ".  content  ."
+      ".  content  .";
+      row-gap: 50px;
     }
     .block {
       background-color: gray;
@@ -83,10 +79,13 @@
       color: white;
       text-align: center;
     }
-    main h2{
-      grid-area: heading;
-      font-size: 20px;
-      margin-top: 50px;
+    .textInput label {
+      display: block;
+    }
+    .textInput input {
+      padding: 8px;
+      width:200px;
+      grid-area: content;
     }
     @media screen and (max-width: 479px) {
 
@@ -108,24 +107,21 @@
     </nav>
   </header>
   <main>
-    <div class="grid">
-      <h2>Enter Email</h2>
-      <div class="block">
-        Text Box
+    <form>
+      <div id="firstNameContainer"class="textInput">
+        <label for="firstNameId"> First Name!</label>
+        <input type="text" id="firstNameId" name="firstName">
       </div>
-    </div>
-      <div class="grid">
-        <h2>Enter Name</h2>
-        <div class="block">
-          Text Box
-        </div>
+      <div id="lastNameContainer"class="textInput">
+        <label for="lastNameId"> First Name!</label>
+        <input type="text" id="firstNameId" name="firstName">
       </div>
-      <div class="grid">
-        <h2>Enter Your Message Here</h2>
-        <div class="block">
-          Text Box
-        </div>
+
+
+
+
       </div>
+    </form>
   </main>
   <footer class="footer">This is footer for my Contact Page</footer>
   </body>
