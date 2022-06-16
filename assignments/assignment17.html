@@ -7,6 +7,9 @@
       * {
         box-sizing: border-box;
       }
+      body {
+
+      }
       .popupTrigger {
         cursor: pointer;
       }
@@ -67,26 +70,30 @@
     </style>
   </head>
   <body>
-    <h1>Howdy Partner</h1>
-    <div class="popupTrigger">Click here to open a popup</div>
-    <div id="popupContainer">
-      <div id="popupBackground" class="closePopup"></div>
-      <div id="popup">
-        <div>Congrats! You opened a popup!</div>
-        <div class="closePopup">Close</div>
+    <div class="background">
+     <header>
+      <h1>Howdy Partner</h1>
+      <div class="popupTrigger">Click here to open a popup</div>
+     <header>
+      <div id="popupContainer">
+        <div id="popupBackground" class="closePopup"></div>
+        <div id="popup">
+          <div>Congrats! You opened a popup!</div>
+          <div class="closePopup">Close</div>
+        </div>
       </div>
+      <script type="text/javascript">
+        $(".popupTrigger").click(
+          function() {
+            $("#popupContainer").addClass("popupOpen");
+          }
+        );
+        $(".closePopup").click(
+          function() {
+            $("#popupContainer").removeClass("popupOpen");
+          }
+        );
+      </script>
     </div>
-    <script type="text/javascript">
-      $(".popupTrigger").click(
-        function() {
-          $("#popupContainer").addClass("popupOpen");
-        }
-      );
-      $(".closePopup").click(
-        function() {
-          $("#popupContainer").removeClass("popupOpen");
-        }
-      );
-    </script>
   </body>
 </html>
