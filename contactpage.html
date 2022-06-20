@@ -49,8 +49,8 @@
       text-decoration: none;
     }
       ul li a:hover {
-      background-color: white;
-      color: royalblue;
+      background-color: seagreen;
+      color: white;
 
     }
       ul li a:active {
@@ -87,6 +87,9 @@
       width:200px;
       grid-area: content;
     }
+    #codeFeelingsId {
+
+    }
     @media screen and (max-width: 479px) {
 
     }
@@ -109,6 +112,7 @@
   <main>
     <form>
       <div id="firstNameContainer"class="textInput">
+        <h2>Enter Contact Info Here</h2>
         <label for="firstNameId"> First Name!</label>
         <input type="text" id="firstNameId" name="firstName">
       </div>
@@ -116,11 +120,18 @@
         <label for="lastNameId"> First Name!</label>
         <input type="text" id="firstNameId" name="firstName">
       </div>
+      <div class="textInput">
+       <label for="codeFeelingsId">
+         How do you feel about programming?
+       </label>
+       <br>
+         <textarea id="codeFeelingsId"
+         name="codeFeelings">Default Text</textarea>
+       </div>
 
 
 
 
-      </div>
     </form>
   </main>
   <footer class="footer">This is footer for my Contact Page</footer>

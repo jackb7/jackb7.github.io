@@ -64,58 +64,27 @@
     }
 
     .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 20px;
-  align-items: stretch;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-template-rows: auto;
+      grid-gap: 20px;
+      align-items: stretch;
   }
     .block3 {
       background-color: green;
       grid-area: picture;
     }
-    .grid img {
-  }
+
     .grid .item {
       position: relative;
-      overflow: hidden;
+      overflow: ;
       }
-
-  .grid .item img {
-    vertical-align: middle;
-    }
-
-
-    .column {
-      flex: 25%;
-      max-width: 25%;
-      padding: 0 4px;
-    }
-
-
-    .picture1 {
-      grid-area: image1;
-    }
-    .picture2 {
-      grid-area: image2;
-    }
-    .picture3 {
-      grid-area: image3;
-    }
-    .picture4 {
-      grid-area: image4;
-    }
-    .picture5 {
-      grid-area: image5;
-    }
-    .picture6 {
-      grid-area: image6;
-    }
-
     .grid img {
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-  max-width: 100%;
-}
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+      max-width: 100%;
+
+    }
 
     @media screen and (max-width: 479px) {
 
@@ -163,15 +132,14 @@
   </header>
   <main>
     <div class="grid">
-      <img src="/pix/samples/1m.jpg" alt="Sample photo">
-     <img src="/pix/samples/24m.jpg" alt="Sample photo">
-     <img src= alt="Sample photo">
-     <img src="images/fallfashioncover.png" alt="Sample photo">
-     <img src="images/JokerPoster.png" alt="Sample photo">
-     <img src="images/appleWebAd.png" alt="Sample photo">
+      <img id="picture1" src="images/fallfashioncover.png" alt="Sample photo">
+      <img id="picture2" src="images/JokerPoster.png" alt="Sample photo">
+      <img id="picture3" src="images/appleWebAd.png" alt="Sample photo">
+      <img id="picture4" src="images/McdeliveryApp2.png" alt="Sample photo">
+      <img id="picture5"src="images/McdeliveryApp.png" alt="Sample photo">
+      <img src="images/FOSSILAdShot.png"
 
-
- </div>
+    </div>
   </main>
   <footer></footer>
   </body>
