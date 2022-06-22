@@ -2,6 +2,8 @@
 <html lang="en-US">
   <head>
     <title>About Page</title>
+    <link type="text/css" rel="stylesheet" href="../../css/slideshow.css">
+
     <style>
 
     body {
@@ -62,7 +64,7 @@
 
       grid-template-areas:
       ".     .      .    ."
-      ". heading sidenav ."
+      ". heading heading ."
       ". content sidenav ."
       ". content sidenav ."
       "footer footer  footer  footer";
@@ -89,13 +91,21 @@
       grid-area: footer;
       text-align: center;
     }
+    main {
+      display: flex;
+    }
     main h2{
-      grid-area: content;
+      grid-area: heading;
       font-size: 28px;
     }
     main img {
       grid-area: sidenav;
-      width: 35%;
+      width: 50%;
+      border-radius: 12px;
+    }
+    main p {
+      font-family: Comic Sans MS, Comic Sans, cursive;
+      font-size: 24px;
     }
     @media screen and (max-width: 479px) {
       .grid{
@@ -156,27 +166,29 @@
       <div class="grid">
         <div class="block1">
           <p>
-            Nulla iudicem do malis elit. Non tempor noster ex iudicem a
-            arbitror esse quae ab aliqua. Summis doctrina eu minim
-            quem.O e esse cillum malis, o nulla ab malis. Quibusdam non
-            veniam admodum. Veniam ut doctrina est nisi consequat
-            voluptatibus ne sunt vidisse oMinim cernantur aut nulla summis. Summis mandaremus e
-            doctrina. An nulla e labore.Constias sunt offendit, ne enim
-            si amet. Sunt proident ne probant. Aliquip o quae, sunt
-            sempiternum litteris quid ullamco, quamquam labore illum
-            consequat quorum, amet qui ubi summis offendit, ad elit
-            incididunt eiusmod ubi irure ingeniis in voluptate, litteris
-            aut tempor sed e in domesticarum. De magna vidisse eu te
-            anim quid nisi vidisse aut ubi anim tamen veniam doctrina,
-            laboris instituendarum de proident. relinqueret, id quibusdam si
-            doctrina de sed velit senserit voluptatibus, sint
-            transferrem incurreret quem occaecat si summis appellat
-            fabulas iis litteris quid incididunt.
+            Hello I'm Jack and Welcome to my Portfolio Website
           </p>
         </div>
       </div>
     </section>
   </main>
-  <footer class="footer">This is footer for my Landing Page</footer>
+  <div id="slideshow">
+    <img id="slide1" class="slideshowImage" src="../../images/cooloilpaintart.webp" alt="slideshow1">
+    <img id="slide2" class="slideshowImage" src="../../images/card2.png" alt="slideshow2">
+    <img id="slide3" class="slideshowImage" src="../../images/card3.jpg" alt="slideshow3">
+    <img id="slide4" class="slideshowImage" src="../../images/BGLOGO.gif" alt="logo">
+  </div>
+  <input
+    type="button"
+    id="previous"
+    value="Previous"
+    onclick="showPreviousSlide()">
+  <input
+   type="button"
+   id="next"
+   value="Next"
+   onclick="showNextSlide()">
+
+  <script type="text/javascript" src="../../js/slideshow.js"></script>
   </body>
 </html>
