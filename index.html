@@ -91,9 +91,6 @@
       grid-area: footer;
       text-align: center;
     }
-    main {
-      display: flex;
-    }
     main h2{
       grid-area: heading;
       font-size: 28px;
@@ -106,6 +103,15 @@
     main p {
       font-family: Comic Sans MS, Comic Sans, cursive;
       font-size: 24px;
+    }
+    #slide4 {
+      width: 45%
+    }
+    #slide3 {
+      width: 45%
+    }
+    #slide2 {
+      width: 45%
     }
     @media screen and (max-width: 479px) {
       .grid{
@@ -173,10 +179,10 @@
     </section>
   </main>
   <div id="slideshow">
-    <img id="slide1" class="slideshowImage" src="../../images/cooloilpaintart.webp" alt="slideshow1">
-    <img id="slide2" class="slideshowImage" src="../../images/card2.png" alt="slideshow2">
-    <img id="slide3" class="slideshowImage" src="../../images/card3.jpg" alt="slideshow3">
-    <img id="slide4" class="slideshowImage" src="../../images/BGLOGO.gif" alt="logo">
+    <img id="slide1" class="slideshowImage" src="" alt="slideshow1">
+    <img id="slide2" class="slideshowImage" src="images/Puppet Model_4.gif" alt="slideshow2">
+    <img id="slide3" class="slideshowImage" src="images/BGLOGO.gif" alt="slideshow3">
+    <img id="slide4" class="slideshowImage" src="images/man-above-clouds.jpg" alt="logo">
   </div>
   <input
     type="button"
@@ -189,6 +195,6 @@
    value="Next"
    onclick="showNextSlide()">
 
-  <script type="text/javascript" src="../../js/slideshow.js"></script>
+  <script type="text/javascript" src="js/slideshow.js"></script>
   </body>
 </html>
