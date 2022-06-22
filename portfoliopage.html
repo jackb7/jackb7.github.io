@@ -25,6 +25,7 @@
     }
     main {
       border-radius:1px;
+      font-family: Comic Sans MS, Comic Sans, cursive
     }
     main h2 {
       grid-area: header;
@@ -54,8 +55,7 @@
       text-decoration: none;
     }
       ul li a:hover {
-      background-color: white;
-      color: royalblue;
+
 
     }
       ul li a:active {
@@ -63,27 +63,54 @@
         color: white;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      grid-template-rows: auto;
-      grid-gap: 20px;
-      align-items: stretch;
-  }
+
     .block3 {
       background-color: green;
       grid-area: picture;
     }
+    .imageContainer {
+      text-align: center;
 
-    .grid .item {
-      position: relative;
-      overflow: ;
-      }
-    .grid img {
-      border: 1px solid #ccc;
-      box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-      max-width: 100%;
+    }
 
+    .container {
+      display: flex;
+      width: 100%;
+      padding: 4% 2%;
+      box-sizing: border-box;
+      height: 100vh;
+    }
+
+    .box {
+      flex: 1;
+      overflow: hidden;
+      transition: .7s;
+      color: transparent;
+      margin: 0 2%;
+      line-height: 0;
+    }
+
+    .box > img {
+      width: 100%;
+      object-fit: contain;
+      transition: .7s;
+    }
+
+    .box > span {
+      font-size: 24px;;
+      display: block;
+      text-align: center;
+      height: 0;
+      line-height: 2.6;
+    }
+    .box:hover {
+      color: black
+    }
+
+    .box:hover { flex: 1 1 20%; }
+    .box:hover > img {
+      width: 100%;
+      height: 75%;
     }
 
     @media screen and (max-width: 479px) {
@@ -91,6 +118,13 @@
       header {
         font-size: 14px
       }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-rows, minmax(300px, 1fr));
+        grid-template-rows: auto;
+        grid-gap: 20px;
+        align-items: stretch;
+    }
       ul li {
         font-size: 18px;
       }
@@ -111,8 +145,30 @@
       .block1 {
         font-size: 12px;
       }
+      .grid .item {
+        position: relative;
+        overflow: ;
+        }
+      .grid img {
+        border: 1px transparent #ccc;
 
+        max-width: 80%;
 
+      }
+      main {
+        display: flex;
+      }
+      .imageContainer {
+        text-align: center;
+
+      }
+      .box {
+        flex: 1;
+        overflow: visible;
+        transition: .7s;
+        margin: 0 2%;
+        line-height: 0;
+      }
 
     }
 
@@ -131,15 +187,41 @@
     </nav>
   </header>
   <main>
+    <div class="container">
+  <div class="box">
+    <img class="picture1"src="images/fallfashioncover.png">
+    <span>Fall Fashion Cover</span>
+  </div>
+  <div class="box">
+    <img class="picture2" src="images/JokerPoster.png">
+    <span>Joker Poster Project</span>
+  </div>
+  <div class="box">
+    <img class="picture3" src="images/appleWebAd.png">
+    <span>Apple Web Ad </span>
+  </div>
+  <div class="box">
+    <img class="picture4" src="images/FOSSILAdShot.png">
+    <span>Fossil Ad Design</span>
+  </div>
+  <div class="box">
+    <img class="picture2" src="images/McdeliveryApp2.png">
+    <span>Mcdeliery App Mockup</span>
+  </div>
+</div>
+    <!--
     <div class="grid">
-      <img id="picture1" src="images/fallfashioncover.png" alt="Sample photo">
-      <img id="picture2" src="images/JokerPoster.png" alt="Sample photo">
-      <img id="picture3" src="images/appleWebAd.png" alt="Sample photo">
-      <img id="picture4" src="images/McdeliveryApp2.png" alt="Sample photo">
-      <img id="picture5"src="images/McdeliveryApp.png" alt="Sample photo">
-      <img src="images/FOSSILAdShot.png"
+      <div class="imageContainer">
+        <img id="picture1" src="images/fallfashioncover.png" alt="Sample photo">
+        <img id="picture2" src="images/JokerPoster.png" alt="Sample photo">
+        <img id="picture3" src="images/appleWebAd.png" alt="Sample photo">
+        <img id="picture4" src="images/McdeliveryApp2.png" alt="Sample photo">
+        <img id="picture5"src="images/McdeliveryApp.png" alt="Sample photo">
+        <img id="picture6"src="images/FOSSILAdShot.png" alt="FossilAdShot">
+      </div>
 
     </div>
+  -->
   </main>
   <footer></footer>
   </body>
