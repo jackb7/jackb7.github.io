@@ -65,8 +65,8 @@
       grid-template-areas:
       ".     .      .    ."
       ". heading heading ."
-      ". content sidenav ."
-      ". content sidenav ."
+      ". sidenav sidenav ."
+      ". content content ."
       "footer footer  footer  footer";
 
 
@@ -80,7 +80,7 @@
     }
     .block1 {
 
-      grid-area: heading;
+      grid-area: content;
       padding: 24px;
     }
     .footer {
@@ -97,7 +97,7 @@
     }
     main img {
       grid-area: sidenav;
-      width: 50%;
+      width: 30%;
       border-radius: 12px;
     }
     main p {
@@ -105,13 +105,13 @@
       font-size: 24px;
     }
     #slide4 {
-      width: 45%
+      width: 25%
     }
     #slide3 {
-      width: 45%
+      width: 25%
     }
     #slide2 {
-      width: 45%
+      width: 25%
     }
     @media screen and (max-width: 479px) {
       .grid{
